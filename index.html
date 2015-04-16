@@ -1,8 +1,9 @@
 <html>
   <head>
     
-    <!-- <link href="F:\Padhaye\CodeAcadmy\font-awesome-4.3.0\css\font-awesome.min.css" rel="stylesheet"> -->
-    <!-- <link href="F:\Padhaye\CodeAcadmy\bootstrap-3.3.4-dist\css\bootstrap.min.css" rel="stylesheet"> -->
+    <link href="font-awesome.min.css" rel="stylesheet">
+    <!-- <link href="bootstrap-3.3.4-dist\css\bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="script.css">
    <script src="jquery-1.11.2.min.js"></script>
     <script src="app.js"></script>
     
@@ -12,8 +13,36 @@
     <script>
      
     </script>
-    <input type = "button" id = "fetch" value = "profilePic"> </input>
+    <div id = 'page0'>
+      <h1><a href = "#" id = "fetch" onclick = "fetch();">Click to Load Ablum..</a></h1>
+      <!-- <input type = "button" id = "fetch" value = "profilePic"> </input> -->
+    </div>
+    <div id = 'page1' class = "selected">
+    <div class = "albums">
+
+      <!-- <ul class = "albumList">
+        <li>asdasd</li>
+      </ul> -->
+    </div>
+    </div>
     
-    <img id="dynamic"> 
+    <div id = 'page2' class = 'selected' >
+        <div class = "header">
+          <ul class = "header1">
+            <li id = "HomePage2" onclick = "homePage3P()">Home</li>
+            <li id = "albumsPage2" onclick = "albumsPage3P()">Albums </li>
+           </ul> 
+        </div>
+        <div class = "ablumPhotos" >
+    
+        </div> 
+    </div> 
+    <div  id = "page3" class = "selected">
+      <a id="close" href="#" onclick = 'close();'>close</a>
+       <div class = "ablumPhotos1" >
+    
+        </div> 
+    </div>
+    <!-- <img id="dynamic">  -->
   </body>
 </html>
